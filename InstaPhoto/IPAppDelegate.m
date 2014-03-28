@@ -12,10 +12,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UIViewController *feedViewController = [[UIViewController alloc] init];
+    feedViewController.title = @"Feed";
+    feedViewController.tabBarItem.image = [UIImage imageNamed:@"tab_icon_feed"];
+    
+    UIViewController *favoritesViewController = [[UIViewController alloc] init];
+    favoritesViewController.title = @"Favorites";
+    favoritesViewController.tabBarItem.image = [UIImage imageNamed:@"tab_icon_favorites"];
+    
+    UIViewController *profileViewController = [[UIViewController alloc] init];
+    profileViewController.title = @"Profile";
+    profileViewController.tabBarItem.image = [UIImage imageNamed:@"tab_icon_profile"];
+   
+    feedViewController.view.backgroundColor = [UIColor blueColor];
+    favoritesViewController.view.backgroundColor = [UIColor redColor];
+    profileViewController.view.backgroundColor = [UIColor greenColor];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    // ...  Add ViewControllers to the tabBar, and default to first.
+    [tabBarController setViewControllers:@[feedViewController, favoritesViewController,profileViewController]];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
