@@ -22,6 +22,9 @@
 		84A1D27218E5623600807A8B /* tab_icon_feed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A1D26C18E5623600807A8B /* tab_icon_feed@2x.png */; };
 		84A1D27318E5623600807A8B /* tab_icon_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A1D26D18E5623600807A8B /* tab_icon_profile.png */; };
 		84A1D27418E5623600807A8B /* tab_icon_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A1D26E18E5623600807A8B /* tab_icon_profile@2x.png */; };
+		84A1D27A18E563D500807A8B /* IPFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D27918E563D500807A8B /* IPFeedViewController.m */; };
+		84A1D27D18E566F600807A8B /* IPFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D27C18E566F500807A8B /* IPFavoritesViewController.m */; };
+		84A1D28018E5671B00807A8B /* IPProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D27F18E5671B00807A8B /* IPProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,12 @@
 		84A1D26C18E5623600807A8B /* tab_icon_feed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon_feed@2x.png"; sourceTree = "<group>"; };
 		84A1D26D18E5623600807A8B /* tab_icon_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon_profile.png; sourceTree = "<group>"; };
 		84A1D26E18E5623600807A8B /* tab_icon_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon_profile@2x.png"; sourceTree = "<group>"; };
+		84A1D27818E563D500807A8B /* IPFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPFeedViewController.h; sourceTree = "<group>"; };
+		84A1D27918E563D500807A8B /* IPFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPFeedViewController.m; sourceTree = "<group>"; };
+		84A1D27B18E566F500807A8B /* IPFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPFavoritesViewController.h; sourceTree = "<group>"; };
+		84A1D27C18E566F500807A8B /* IPFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPFavoritesViewController.m; sourceTree = "<group>"; };
+		84A1D27E18E5671B00807A8B /* IPProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPProfileViewController.h; sourceTree = "<group>"; };
+		84A1D27F18E5671B00807A8B /* IPProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +102,12 @@
 				84A1D24218E4A4F400807A8B /* IPAppDelegate.h */,
 				84A1D24318E4A4F400807A8B /* IPAppDelegate.m */,
 				84A1D23A18E4A4F400807A8B /* Supporting Files */,
+				84A1D27818E563D500807A8B /* IPFeedViewController.h */,
+				84A1D27918E563D500807A8B /* IPFeedViewController.m */,
+				84A1D27B18E566F500807A8B /* IPFavoritesViewController.h */,
+				84A1D27C18E566F500807A8B /* IPFavoritesViewController.m */,
+				84A1D27E18E5671B00807A8B /* IPProfileViewController.h */,
+				84A1D27F18E5671B00807A8B /* IPProfileViewController.m */,
 			);
 			path = InstaPhoto;
 			sourceTree = "<group>";
@@ -191,6 +206,9 @@
 			files = (
 				84A1D24018E4A4F400807A8B /* main.m in Sources */,
 				84A1D24418E4A4F400807A8B /* IPAppDelegate.m in Sources */,
+				84A1D27A18E563D500807A8B /* IPFeedViewController.m in Sources */,
+				84A1D27D18E566F600807A8B /* IPFavoritesViewController.m in Sources */,
+				84A1D28018E5671B00807A8B /* IPProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
