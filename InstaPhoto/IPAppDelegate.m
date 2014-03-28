@@ -7,26 +7,19 @@
 //
 
 #import "IPAppDelegate.h"
+#import "IPFeedViewController.h"
+#import "IPFavoritesViewController.h"
+#import "IPProfileViewController.h"
 
 @implementation IPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UIViewController *feedViewController = [[UIViewController alloc] init];
-    feedViewController.title = @"Feed";
-    feedViewController.tabBarItem.image = [UIImage imageNamed:@"tab_icon_feed"];
-    
-    UIViewController *favoritesViewController = [[UIViewController alloc] init];
-    favoritesViewController.title = @"Favorites";
-    favoritesViewController.tabBarItem.image = [UIImage imageNamed:@"tab_icon_favorites"];
-    
-    UIViewController *profileViewController = [[UIViewController alloc] init];
-    profileViewController.title = @"Profile";
-    profileViewController.tabBarItem.image = [UIImage imageNamed:@"tab_icon_profile"];
-   
-    feedViewController.view.backgroundColor = [UIColor blueColor];
-    favoritesViewController.view.backgroundColor = [UIColor redColor];
-    profileViewController.view.backgroundColor = [UIColor greenColor];
+    IPFeedViewController *feedViewController = [[UIViewController alloc] init];
+
+    IPFavoritesViewController *favoritesViewController = [[UIViewController alloc] init];
+
+    IPProfileViewController *profileViewController = [[UIViewController alloc] init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     // ...  Add ViewControllers to the tabBar, and default to first.
