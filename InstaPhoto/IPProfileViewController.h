@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface IPProfileViewController : UIViewController
-
+@property (strong, nonatomic) UIScrollView *scrollView;
 @end
