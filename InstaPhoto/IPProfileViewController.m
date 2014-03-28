@@ -30,6 +30,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor greenColor];
+    
+    // Creates a view for displaying an image
+    // If not a png we need to specify image extension
+	UIImageView *logoView = [[UIImageView alloc] initWithImage:
+                             [UIImage imageNamed:@"higgie_profile_image"]];
+    // Determines how a view lays out its content
+	[logoView setContentMode:UIViewContentModeScaleAspectFit];
+    // The frame rectangle, which describes the view’s location
+    // and size in its superview’s coordinate system
+	logoView.frame = self.view.frame;
+	[self.view addSubview:logoView];
+
 }
 
 - (void)didReceiveMemoryWarning
