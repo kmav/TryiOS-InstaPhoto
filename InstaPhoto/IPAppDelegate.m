@@ -15,11 +15,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    IPFeedViewController *feedViewController = [[UIViewController alloc] init];
+    IPFeedViewController *feedViewController = [[IPFeedViewController alloc] init];
 
-    IPFavoritesViewController *favoritesViewController = [[UIViewController alloc] init];
+    IPFavoritesViewController *favoritesViewController = [[IPFavoritesViewController alloc] init];
 
-    IPProfileViewController *profileViewController = [[UIViewController alloc] init];
+    IPProfileViewController *profileViewController = [[IPProfileViewController alloc] init];
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     // ...  Add ViewControllers to the tabBar, and default to first.
